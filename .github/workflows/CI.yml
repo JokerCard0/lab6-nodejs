@@ -10,8 +10,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: pip install
-      - run: pip test
+      - run: npm install
+      - run: npm test
 
   docker_build:
     runs-on: ubuntu-latest
